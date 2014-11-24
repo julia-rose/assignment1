@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/about' => "pages#about"
 
   get '/profile1' => "profiles#profile1"
+  # This could work better as a resource as we saw in class
+  get 'profile/:id' => 'profile#show'
 
   
   # The priority is based upon order of creation: first created -> highest priority.
